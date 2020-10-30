@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rani Gunawanti | Writer, Digital Marketer, English Teacher | rani19108ti@student.nurulfikri.ac.id</title>
+    <meta charset="utf-8"/>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 0px solid black;
+            
+        }
+        h1 { 
+            color: rgb(12, 196, 125); 
+            font-family: 'Helvetica Neue', sans-serif; 
+            font-weight: bold; 
+            font-size: 30px;            
+            text-align: left;
+            margin-bottom: 0em;
+        }
+        h2 { 
+            color: rgb(26, 27, 29); 
+            font-family: 'Helvetica Neue', sans-serif; 
+            font-weight: bold; 
+            font-size: 20px;            
+            text-align: left;
+            margin-bottom: 0em;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <table align='center' width=50%>
+        <tr> <!--Baris Top Heading-->
+            <th colspan="4">
+                <h1>Student Registration</h1>
+            </th>
+        </tr>
+        <tr style="height:30px"> <!--Baris Date-->
+            <td colspan="2" width=50%></td>
+            <td width=20%>Date</td>
+            <td>
+                <form>
+                    <input type="date" id="fdate" name="fdate">
+                </form>
+            </td>
+        </tr>
+        <tr> <!--Baris Personal Information-->
+            <th colspan="4">
+                <h2>Personal Information</h1><hr>
+            </th>
+        </tr>
+        <tr style="height:30px">
+            <td width=25%>Name</td>
+            <td colspan="3" bgcolor="#D7DBDD">
+                <form>
+                    <input type="text" id="fnama" name="fname" size="50">
+                </form>
+            </td>
+        </tr>
+        <tr style="height:30px">
+            <td>Date of Birth</td>
+            <td colspan="3" bgcolor="#D7DBDD">
+                <form>
+                    <input type="date" id="fdob" name="fdob" size="50">
+                </form>
+            </td>
+        </tr>
+        <tr><td></td></tr>
+        <tr> <!--Contact Information-->
+            <th colspan="4">
+                <h2>Contact Information</h1><hr>
+            </th>
+        </tr>
+        <tr style="height:30px">
+            <td>Address</td>
+            <td colspan="3" bgcolor="#D7DBDD">
+                <form>
+                    <input type="text" id="faddress" name="faddress" size="50">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td bgcolor="#D7DBDD">
+                <form>
+                    <input type="text" id="fcity" name="fcity">
+                </form>
+            </td>
+            <td>Province/State</td>
+            <td bgcolor="#D7DBDD">
+                <form>
+                    <input type="text" id="fstate" name="fstate">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>ZIP Code</td>
+            <td bgcolor="#D7DBDD">
+                <form>
+                    <input type="number" id="fzip" name="fzip">
+                </form>
+            </td>
+            <td>Country</td>
+            <td bgcolor="#D7DBDD">
+                <select id="country" name="country">
+                    <option value="">--Choose--</option>
+                    <option value="Malaysia">Malaysia</option>
+                    <option value="Thailand">Thailand</option>
+                    <option value="Vietnam">Vietnam</option>
+                    <option value="Australia">Australia</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td bgcolor="#D7DBDD">
+                <form>
+                    <input type="number" id="fphone" name="fphone">
+                </form>
+            </td>
+            <td>Email</td>
+            <td bgcolor="#D7DBDD">
+                <form>
+                    <input type="email" id="femail" name="femail">
+                </form>   
+            </td>
+        </tr>
+        <tr>
+            <td>Membership Type</td>
+            <td bgcolor="#D7DBDD">
+                <form>
+                    <input type="radio" value="R" name="mt"> Reguler
+                </form>
+            </td>
+            <td bgcolor="#D7DBDD">
+                <form>
+                    <input type="radio" value="P" name="mt"> Premium
+                </form>
+            </td>
+            <td bgcolor="#D7DBDD">
+                <form>
+                    <input type="radio" value="VIP" name="mt"> VIP
+                </form>   
+            </td>
+        </tr>
+        <tr><td></td></tr>
+        <tr> <!--Course Information-->
+            <th colspan="4">
+                <h2>Course Information</h1><hr>
+            </th>
+        </tr>
+        <tr style="height:30px">
+            <td>Course Name</td>
+            <td colspan="3" bgcolor="#D7DBDD">
+                <select id="coursename" name="coursename">
+                    <option value="">--Choose--</option>
+                    <option value="Basis Data">Basis Data</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Artificial Intelligence">Artificail Intelligence</option>
+                    <option value="Pemrograman Web">Web Full Stack</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+                <td>Payment Details</td>
+                <td bgcolor="#D7DBDD">
+                    <form>
+                        <input type="radio" value="cash" name="pd"> Cash
+                    </form>
+                </td>
+                <td bgcolor="#D7DBDD">
+                    <form>
+                        <input type="radio" value="cheque" name="pd"> Cheque
+                    </form>
+                </td>
+                <td bgcolor="#D7DBDD">
+                    <form>
+                        <input type="radio" value="creditcard" name="pd"> Credit Card
+                    </form>   
+                </td>
+        </tr>
+        <tr>
+            <td>Comments</td>
+            <td colspan=3 bgcolor="#D7DBDD">
+                <form>
+                    <textarea id="comments" name="comments" rows=1 cols=50></textarea>
+                </form>
+            </td>
+        </tr>
+        <tr style="height: 30px"><td></td></tr>
+        <tr>
+            <td colspan="2">
+                <form><input type="text" id="stusign" name="stusign" placeholder="Student's Signature" size=40></form>
+            </td>
+            <td colspan="2">
+                <form><input type="text" id="validator" name="validator" placeholder="Validated by" size=40></form>
+            </td>
+        </tr>
+        <tr><td>
+            <input type="submit" value="Submit">
+        </td></tr>
+    </table>
+</body>
+
+</html>
